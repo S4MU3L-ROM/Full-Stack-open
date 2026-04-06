@@ -1,15 +1,15 @@
-## 0.4: Nuevo diagrama de nota
+## 0.4: New note diagram
 
 ```mermaid
 sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: El usuario escribe una nota en el campo de texto y hace clic en Save
+    Note right of browser: The user writes a note in the text field and clicks Save
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note right of server: El servidor guarda la nueva nota
+    Note right of server: The server saves the new note
     server-->>browser: HTTP 302 Redirect to /exampleapp/notes
     deactivate server
 
