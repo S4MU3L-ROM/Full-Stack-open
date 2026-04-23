@@ -3,7 +3,6 @@ const Header = (props) => {
     <h1>{props.course}</h1>
   )
 }
-
 const Part = (props) => {
   return (
       <p>

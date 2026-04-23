@@ -1,0 +1,25 @@
+.notification {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background: #a1f3a1;
+    font-size: 20px;
+    border: 2px solid rgba(0, 128, 0, 0.68);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.error {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background: #b35252;
+    font-size: 20px;
+    border: 2px solid rgba(239, 4, 4, 0.38);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
