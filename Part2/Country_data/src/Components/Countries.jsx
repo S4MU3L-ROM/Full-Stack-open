@@ -1,4 +1,7 @@
+import Weather from "./Weather.jsx";
+
 const Countries = ({ countries, search, onShowCountry }) => {
+
     if (search === "") {
         return <p></p>
     }
@@ -18,6 +21,8 @@ const Countries = ({ countries, search, onShowCountry }) => {
             </div>
         )
     }
+
+
 
     if (countries.length === 1) {
         const country = countries[0]
@@ -40,6 +45,10 @@ const Countries = ({ countries, search, onShowCountry }) => {
                     alt={`flag of ${country.name.common}`}
                     width="150"
                 />
+
+                <Weather country={country} />
+
+
             </div>
         )
     }
